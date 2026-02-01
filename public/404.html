@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VulnBlog</title>
+    <script>
+      // SPA redirect for GitHub Pages
+      // Redirige les 404 vers index.html avec le path en query string
+      const path = window.location.pathname;
+      const repo = '/SupatestVibeDemo';
+      const newPath = path.startsWith(repo) ? path.slice(repo.length) : path;
+      sessionStorage.setItem('redirect', newPath + window.location.search);
+      window.location.replace(repo + '/');
+    </script>
+  </head>
+  <body></body>
+</html>
