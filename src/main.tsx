@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
 
-// Base path pour GitHub Pages
+// Basename pour GitHub Pages
 const basename = import.meta.env.BASE_URL
 
 createRoot(document.getElementById('root')!).render(
